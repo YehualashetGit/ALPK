@@ -28,7 +28,7 @@ def normalize(text, removeEnglish = True, similarizePunctuations = True, similar
         englishRemovalDict = getRegexDict(normalize_rules_dir + "english_removal.json")
         text = replace(text, englishRemovalDict)
 
-    if (similarizePhonetics):
+    if (similarizePunctuations):
         punktSimilarizationDict = getRegexDict(normalize_rules_dir + "punkt_character_similarization.json")
         text = replace(text, punktSimilarizationDict)
     
