@@ -1,9 +1,9 @@
 import re
 import json
 
+
 def getRegexDict(file_name):
     regex_dictionary={}
-
     with open(file_name) as json_file:
         json_dict=json.load(json_file)
         for key, value in json_dict.items():

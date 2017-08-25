@@ -6,10 +6,8 @@ class tokenize:
         self.__sent_delimiters = ['።', '፤', '፦', '፧', '?']
         #self.__word_delimiters = ['፠', '፡', '።', '፣', '፤', '፥', '፦', '፧', '?',' ']
         self.tokenizer = tokenizer
-
     def get_punkt_rules(self):
         return self.__punkts
-
     def sent_tokenize(self, text):
         sents = self.tokenizer.parse(self.__sent_delimiters)
         new_sents = []
